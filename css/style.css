@@ -157,3 +157,33 @@ a{
 .grid-item h3:hover{
     transform: scale(1.1)
 } 
+
+/* footer */
+footer {
+    text-align: center;
+    background-color: rgb(232, 212, 252);
+    padding: 20px 0;
+}
+
+.footer h4 {
+    margin-bottom: 12px;
+}
+
+.footer ul {
+    padding: 0;
+    justify-content: center;
+}
+
+.footer ul li {
+    margin: 0 10px;
+}
+
+.social {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.footer h5 {
+    margin-top: 12px;
+}
