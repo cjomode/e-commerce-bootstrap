@@ -12,10 +12,15 @@ body{
     height: 31rem;
 }
 
+#mais_buscados{
+    padding:20px;
+}
+
 ul{
     list-style-type: none;
     padding-left: 10px;
     display: flex;
+    font-size: 20px;
 }
 
 #logo {
@@ -28,14 +33,13 @@ ul{
 } 
 
 section #info{
-    display: flex;
     justify-content: space-between;
 }
 
 /* texto card */
 p{
     padding-top: 9px;
-
+    font-size: 20px;
 }
 
 #bem-vindo{
@@ -45,9 +49,9 @@ p{
 }
 
 h3{
+    font-size: 20px;
     text-align: center;
-    padding-top: 16px;
-    padding-bottom: 20px;
+    padding-top: 10px;
     font-weight: lighter; 
 }
 
@@ -157,3 +161,34 @@ a{
 .grid-item h3:hover{
     transform: scale(1.1)
 } 
+
+/* footer */
+footer {
+    text-align: center;
+    background-color: rgb(232, 212, 252);
+    padding: 20px 0;
+}
+
+.footer h4 {
+    margin-bottom: 12px;
+}
+
+.footer ul {
+    padding: 0;
+    justify-content: center;
+}
+
+.footer ul li {
+    margin: 0 10px;
+}
+
+.social {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.footer h5 {
+    margin-top: 12px;
+}
+
