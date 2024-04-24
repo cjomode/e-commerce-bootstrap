@@ -27,8 +27,10 @@ ul{
     width:50px ;
 }
 .menu2 {
-    width: 40px;
+    position: relative;
+    width: 50px;
     padding-right: 18px;
+    top: 5px;
     cursor: pointer;
 } 
 
@@ -37,7 +39,7 @@ section #info{
 }
 
 /* texto card */
-p{
+#info p{
     padding-top: 9px;
     font-size: 20px;
 }
@@ -161,6 +163,17 @@ a{
 .grid-item h3:hover{
     transform: scale(1.1)
 } 
+
+/* carrossel texto */
+.carousel-caption.d-none.d-md-block h5, h6{
+    background-image: linear-gradient(#4b4b4bc2,#04050653);
+}
+
+.carousel-caption.d-none.d-md-block h5{
+    margin: 0;
+    padding: 10px;
+}
+
 
 /* footer */
 footer {
