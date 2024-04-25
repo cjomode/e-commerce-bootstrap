@@ -28,8 +28,10 @@ a{
 }
 
 .menu2 {
-    width: 40px;
+    position: relative;
+    width: 50px;
     padding-right: 18px;
+    top: 5px;
     cursor: pointer;
 } 
 
