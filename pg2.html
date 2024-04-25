@@ -9,7 +9,12 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="js/js.js" ></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Shippori+Antique+B1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&family=Righteous&family=Shippori+Antique+B1&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="p-3 mb-3">
@@ -45,7 +50,6 @@
             </ul>
         </div>
     </header>
-
     <div id="main">
         <div class="container">
             <div class="mySlides">
@@ -81,16 +85,63 @@
                 </div>
             </div>
         </div>
-
         <div class="container">
             <div class="panel panel-info">
                 <div class="panel-heading">Descrição</div>
-                <div class="panel-body">Uma das Graphic Novels mais influentes de todos os tempos e um eterno bestseller, WATCHMEN só cresceu em estatura desde sua publicação original, como minissérie, em 1986. Esta edição de luxo, com capa dura, papel especial e formato diferenciado, traz a lendária saga escrita por Alan Moore e desenhada por Dave Gibbons, totalmente recolorida digitalmente por John Higgings, o colorista original. Não apenas isso, o volume de 460 páginas também apresenta uma quantidade de extras jamais vista no Brasil, trazendo trechos do roteiro original, esboços de Gibbons, comentários sobre os personagens, textos dos criadores e mais. Uma edição primorosa que não pode faltar na estante de nenhum colecionador. Uma edição primorosa que não pode faltar na estante de nenhum colecionador.O ano é 1985. Os Estados Unidos são uma nação totalitária e fechada, isolada do resto do mundo. A presença de arsenais nucleares e dos chamados super-heróis mantém um certo equilíbrio entre as forças do planeta... até que o relógio do fim do mundo começa a marchar para a meia-noite e a raça humana para um abismo sem-fim. A sombria e inigualável trama tem início com ilusões paranóicas do supostamente insano herói Rorschach, um dos Watchmen que patrulhavam os EUA décadas atrás. Mas ele estaria realmente insano ou na verdade teria descoberto uma sórdida conspiração para assassinar super-heróis -- ou, pior ainda, milhões de civis inocentes? Fugindo da lei, Rorschach junta-se a ex-companheiros do passado em uma desesperada tentativa de salvar suas próprias vidas... e o que acabam descobrindo, além de abalar suas estruturas, poderá alterar o próprio destino do planeta Terra! Seguindo duas gerações de heróis mascarados, desde a Segunda Guerra até os tensos anos da Guerra Fria, surge esta pioneira epopéia de ódio, amor, reencontros impossíveis, grandes reviravoltas e muita ação, como só a criatividade de Alan Moore e Dave Gibbons poderia conceber! WATCHMEN foi considerada pela revista TIME uma das cem melhores obras em língua inglesa de todos os tempos.</div>
+                <div class="panel-body">
+                    <p >Uma das Graphic Novels mais influentes de todos os tempos e um eterno bestseller, WATCHMEN só cresceu em estatura desde sua publicação original, como minissérie, em 1986. Esta edição de luxo, com capa dura, papel especial e formato diferenciado, traz a lendária saga escrita por Alan Moore e desenhada por Dave Gibbons, totalmente recolorida digitalmente por John Higgings, o colorista original. </p>
+                    <p id="texto"></p>
+                    <!-- ver mais -->
+                    
+                </div>
+                
+                <button id="ver-mais-btn" onclick="conteudoAdicionall()">Ver Mais</button>
+                <button id="ver-menos-btn" onclick="conteudoRemovido()">Ver Menos</button>
             </div>
+           
         </div>
-
         
-
+        <script>
+            function conteudoAdicionall(){
+                document.addEventListener("click",function(){
+                document.getElementById("texto").textContent="Não apenas isso, o volume de 460 páginas também apresenta uma quantidade de extras jamais vista no Brasil, trazendo trechos do roteiro original, esboços de Gibbons, comentários sobre os personagens, textos dos criadores e mais. Uma edição primorosa que não pode faltar na estante de nenhum colecionador. Uma edição primorosa que não pode faltar na estante de nenhum colecionador.O ano é 1985. Os Estados Unidos são uma nação totalitária e fechada, isolada do resto do mundo. A presença de arsenais nucleares e dos chamados super-heróis mantém um certo equilíbrio entre as forças do planeta... até que o relógio do fim do mundo começa a marchar para a meia-noite e a raça humana para um abismo sem-fim. A sombria e inigualável trama tem início com ilusões paranóicas do supostamente insano herói Rorschach, um dos Watchmen que patrulhavam os EUA décadas atrás. Mas ele estaria realmente insano ou na verdade teria descoberto uma sórdida conspiração para assassinar super-heróis -- ou, pior ainda, milhões de civis inocentes? Fugindo da lei, Rorschach junta-se a ex-companheiros do passado em uma desesperada tentativa de salvar suas próprias vidas... e o que acabam descobrindo, além de abalar suas estruturas, poderá alterar o próprio destino do planeta Terra! Seguindo duas gerações de heróis mascarados, desde a Segunda Guerra até os tensos anos da Guerra Fria, surge esta pioneira epopéia de ódio, amor, reencontros impossíveis, grandes reviravoltas e muita ação, como só a criatividade de Alan Moore e Dave Gibbons poderia conceber! WATCHMEN foi considerada pela revista TIME uma das cem melhores obras em língua inglesa de todos os tempos.",
+                        "<p>Conteúdo adicional 2</p>",
+                        "<p>Conteúdo adicional 3</p>"
+                    
+                })
+                
+             }
+             function conteudoRemovido(){ document.addEventListener("click",function(){
+                document.getElementById("texto").textContent=""
+                    
+                })
+                
+                
+             }
+            // document.addEventListener("DOMContentLoaded", function() {
+            //     var panel = document.getElementsByClassName('panel');
+            //     var verMaisBtn = document.getElementById('ver-mais-btn');
+    
+            //     // Função para carregar conteúdo adicional
+            //     function carregarConteudoAdicional() {
+            //         // Conteúdo adicional a ser carregado
+            //         var conteudoAdicional = [
+            //             "<p>Não apenas isso, o volume de 460 páginas também apresenta uma quantidade de extras jamais vista no Brasil, trazendo trechos do roteiro original, esboços de Gibbons, comentários sobre os personagens, textos dos criadores e mais. Uma edição primorosa que não pode faltar na estante de nenhum colecionador. Uma edição primorosa que não pode faltar na estante de nenhum colecionador.O ano é 1985. Os Estados Unidos são uma nação totalitária e fechada, isolada do resto do mundo. A presença de arsenais nucleares e dos chamados super-heróis mantém um certo equilíbrio entre as forças do planeta... até que o relógio do fim do mundo começa a marchar para a meia-noite e a raça humana para um abismo sem-fim. A sombria e inigualável trama tem início com ilusões paranóicas do supostamente insano herói Rorschach, um dos Watchmen que patrulhavam os EUA décadas atrás. Mas ele estaria realmente insano ou na verdade teria descoberto uma sórdida conspiração para assassinar super-heróis -- ou, pior ainda, milhões de civis inocentes? Fugindo da lei, Rorschach junta-se a ex-companheiros do passado em uma desesperada tentativa de salvar suas próprias vidas... e o que acabam descobrindo, além de abalar suas estruturas, poderá alterar o próprio destino do planeta Terra! Seguindo duas gerações de heróis mascarados, desde a Segunda Guerra até os tensos anos da Guerra Fria, surge esta pioneira epopéia de ódio, amor, reencontros impossíveis, grandes reviravoltas e muita ação, como só a criatividade de Alan Moore e Dave Gibbons poderia conceber! WATCHMEN foi considerada pela revista TIME uma das cem melhores obras em língua inglesa de todos os tempos.</p>",
+            //             "<p>Conteúdo adicional 2</p>",
+            //             "<p>Conteúdo adicional 3</p>"
+            //         ];
+            //         for (var i = 0; i < conteudoAdicional.length; i++) {
+            //             panel.insertAdjacentHTML('beforeend', conteudoAdicional[i]);
+            //         }
+            //         // Esconde o botão "Ver Mais" após o carregamento
+            //         verMaisBtn.style.display = 'none';
+            //     }
+    
+            //     // Adiciona um evento de clique ao botão "Ver Mais"
+            //     verMaisBtn.addEventListener('click', carregarConteudoAdicional);
+            // });
+        </script>
+        
         <!-- carrinho de compra -->
         <div class="container">
             <div class="dropdown">
@@ -115,7 +166,6 @@
         </div>
     </div>
     <!-- fim da main -->
-
     <footer>
         <div>
             <div class="footer">
@@ -125,12 +175,12 @@
                 <li><img class="social" src="images/instagram.png" ></li>
                 <li><img class="social" src="images/twitter.png" ></li>
             </ul>
-                <h5>&copy;2024</h5>
+                <h5>&copy;JulianaM,Massuello, Gabriel,Vitor 2024</h5>
             </div>
         </div>
     </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 <script src="js/carrinhodecompra.js"></script>
-
+<script src="js/ver mais.js"></script>
 </body>
 </html>

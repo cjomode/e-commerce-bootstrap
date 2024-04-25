@@ -3,26 +3,26 @@
 }
 body{
     background-color: rgb(189, 176, 199);
-    font-family: 'Franklin Gothic Medium';
+    font-family: "Righteous", sans-serif;
+    font-weight: 400;
     transition: background-color 0.5s ease;
 
+} 
+.p-3{
+    background-color: rgb(228, 218, 218);
 }
-
 .carousel-item {
     height: 31rem;
 }
-
 #mais_buscados{
     padding:20px;
 }
-
 ul{
     list-style-type: none;
     padding-left: 10px;
     display: flex;
     font-size: 20px;
 }
-
 #logo {
     width:50px ;
 }
@@ -33,34 +33,28 @@ ul{
     top: 5px;
     cursor: pointer;
 } 
-
 section #info{
     justify-content: space-between;
 }
-
 /* texto card */
 #info p{
     padding-top: 9px;
     font-size: 20px;
 }
-
 #bem-vindo{
     text-align: center;
     padding-bottom: 15px;
     font-weight: lighter;
 }
-
 h3{
     font-size: 20px;
     text-align: center;
     padding-top: 10px;
     font-weight: lighter; 
 }
-
 #imagem-card{
     width: 207px;
 }
-
 a{
     cursor: pointer;
     text-decoration: none;
@@ -79,7 +73,6 @@ a{
     font-size: 20px;
     border-radius: 5px;
 } 
-
 .grid-container{
     display: grid;
     gap: 50px;
