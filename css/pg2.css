@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    background-color: rgb(189, 176, 199);
+    background-color: rgb(189, 176, 199)!important;
     font-family: "Righteous", sans-serif;
     font-weight: 400;
     transition: background-color 0.5s ease;
