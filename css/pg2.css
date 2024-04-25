@@ -51,17 +51,14 @@ a{
 .mySlides {
     display: none;
 }
-
 .mySlides:first-child {
     display: block;
 }
-
 .mySlides img {
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
-
 .numbertext {
     position: absolute;
     top: 0;
@@ -70,7 +67,6 @@ a{
     padding: 8px 12px;
     background-color: rgba(0, 0, 0, 0.5);
 }
-
 .prev,.next {
     cursor: pointer;
     position: absolute;
@@ -85,40 +81,35 @@ a{
     border-radius: 0 3px 3px 0;
     user-select: none;
 }
-
 .prev {
     left: 0;
 }
-
 .next {
     right: 0;
     border-radius: 3px 0 0 3px;
 }
-
 .row {
     display: flex;
     justify-content: center;
     padding-top: 15px;
 }
-
 .column {
     flex: 25%;
     padding: 0 4px;
 }
-
 .demo {
     opacity: 0.6;
 }
-
 .active,.demo:hover {
     opacity: 1;
 }
-
 #main{
     display: flex;
 }
-
-
+.nav-link{
+    color: black!important;
+    
+}
 /* foooter */
 
 footer {

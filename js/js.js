@@ -1,13 +1,5 @@
 var slideIndex = 1;
-showSlides(slideIndex);
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
 
 function showSlides(n) {
   var i;
@@ -23,4 +15,24 @@ function showSlides(n) {
   }
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
+}
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+function showVideo() {
+  // Exibe o contêiner de vídeo e oculta o contêiner de comentários
+  document.getElementById('videoContainer').style.display = 'block';
+  document.getElementById('comentariosContainer').style.display = 'none';
+}
+
+function showComentarios() {
+  // Exibe o contêiner de comentários e oculta o contêiner de vídeo
+  document.getElementById('comentariosContainer').style.display = 'block';
+  document.getElementById('videoContainer').style.display = 'none';
 }
