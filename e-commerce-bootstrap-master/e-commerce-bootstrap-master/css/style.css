@@ -1,0 +1,203 @@
+*{
+    margin: 0;
+}
+body{
+    background-color: rgb(189, 176, 199);
+    font-family: "Righteous", sans-serif;
+    font-weight: 400;
+    transition: background-color 0.5s ease;
+
+} 
+.p-3{
+    background-color: rgb(228, 218, 218);
+}
+.carousel-item {
+    height: 31rem;
+}
+#mais_buscados{
+    padding:20px;
+}
+ul{
+    list-style-type: none;
+    padding-left: 10px;
+    display: flex;
+    font-size: 20px;
+}
+#logo {
+    width:50px ;
+}
+.menu2 {
+    position: relative;
+    width: 50px;
+    padding-right: 18px;
+    top: 5px;
+    cursor: pointer;
+} 
+section #info{
+    justify-content: space-between;
+}
+/* texto card */
+#info p{
+    padding-top: 9px;
+    font-size: 20px;
+}
+#bem-vindo{
+    text-align: center;
+    padding-bottom: 15px;
+    font-weight: lighter;
+}
+h3{
+    font-size: 20px;
+    text-align: center;
+    padding-top: 10px;
+    font-weight: lighter; 
+}
+#imagem-card{
+    width: 207px;
+}
+a{
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+.flex-container{
+    display: flex;
+    background-color: rgb(116, 100, 119);
+    justify-content: center;
+}
+.flex-container div{
+    background-color: rgb(244, 225, 252);
+    padding: 15px;
+    margin: 15px;
+    line-height: 20px;
+    font-size: 20px;
+    border-radius: 5px;
+} 
+.grid-container{
+    display: grid;
+    gap: 50px;
+    grid-template-columns: auto auto auto auto;
+    place-content: center;
+}
+.grid-item{
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px;
+    padding: 18px;
+    font-size: 15px;
+    text-align: center;
+}
+.grid-item h3{
+    background-color: rgb(214, 80, 255);
+    padding: 5px;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+} 
+
+.grid-item img{
+    width: 205px;
+} 
+
+#imagem-card-1{
+    width: 210px;
+}
+#imagem-card-2{
+    width: 216px;
+}
+#imagem-card-3{
+    width: 210px;
+}
+#imagem-card-5{
+    width: 222px;
+}
+#imagem-card-6{
+    width: 215px;
+}
+#imagem-card-7{
+    width: 214px;
+}
+#imagem-card-8{
+    width: 210px;
+}
+#imagem-card-9{
+    width: 214px;
+}
+#imagem-card-10{
+    width: 215px;
+}
+#imagem-card-11{
+    width: 208px;
+}
+#imagem-card-12{
+    width: 217px;
+}
+#imagem-card-13{
+    width: 216px;
+}
+#imagem-card-14{
+    width: 216px;
+}
+#imagem-card-16{
+    width: 212px;
+}
+#imagem-card-17{
+    width: 215px;
+}
+#imagem-card-18{
+    width: 222px;
+}
+#imagem-card-19{
+    width: 215px;
+}
+#imagem-card-20{
+    width: 215px;
+}
+
+.grid-item h3:hover{
+    transform: scale(1.1)
+} 
+
+/* carrossel texto */
+.carousel-caption.d-none.d-md-block {
+    background-image: linear-gradient(#4b4b4bc2,#04050653);
+    bottom: 35px;
+    height: 100px;
+    
+}
+
+.carousel-caption.d-none.d-md-block h5{
+    margin: 0;
+    padding: 10px;
+}
+
+
+/* footer */
+footer {
+    text-align: center;
+    background-color: rgb(232, 212, 252);
+    padding: 20px 0;
+}
+
+.footer h4 {
+    margin-bottom: 12px;
+}
+
+.footer ul {
+    padding: 0;
+    justify-content: center;
+}
+
+.footer ul li {
+    margin: 0 10px;
+}
+
+.social {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.footer h5 {
+    margin-top: 12px;
+}
+
