@@ -51,7 +51,10 @@
             </ul>
         </div>
     </header>
+<<<<<<< HEAD
     <div class="ajeitar">
+=======
+>>>>>>> e76a78f75ed363e83dfbc5adfb2fec74bafeb8c2
     <div id="main">
         <div class="container">
             <div class="mySlides">
@@ -98,6 +101,26 @@
                <button id="ver-menos-btn" onclick="conteudoRemovido()" style="display: none;">Ver Menos</button>
             </div>
         </div>
+<<<<<<< HEAD
+=======
+        <script>
+            let primeiroBotao = document.getElementById("ver-mais-btn")        
+            let segundoBotao = document.getElementById("ver-menos-btn") 
+            function conteudoAdicionall(){
+                primeiroBotao.style.display="none"
+                segundoBotao.style.display="inline-block" 
+                document.getElementById("texto").textContent="Não apenas isso, o volume de 460 páginas também apresenta uma quantidade de extras jamais vista no Brasil, trazendo trechos do roteiro original, esboços de Gibbons, comentários sobre os personagens, textos dos criadores e mais. Uma edição primorosa que não pode faltar na estante de nenhum colecionador. Uma edição primorosa que não pode faltar na estante de nenhum colecionador.O ano é 1985. Os Estados Unidos são uma nação totalitária e fechada, isolada do resto do mundo. A presença de arsenais nucleares e dos chamados super-heróis mantém um certo equilíbrio entre as forças do planeta... até que o relógio do fim do mundo começa a marchar para a meia-noite e a raça humana para um abismo sem-fim. A sombria e inigualável trama tem início com ilusões paranóicas do supostamente insano herói Rorschach, um dos Watchmen que patrulhavam os EUA décadas atrás. Mas ele estaria realmente insano ou na verdade teria descoberto uma sórdida conspiração para assassinar super-heróis -- ou, pior ainda, milhões de civis inocentes? Fugindo da lei, Rorschach junta-se a ex-companheiros do passado em uma desesperada tentativa de salvar suas próprias vidas... e o que acabam descobrindo, além de abalar suas estruturas, poderá alterar o próprio destino do planeta Terra! Seguindo duas gerações de heróis mascarados, desde a Segunda Guerra até os tensos anos da Guerra Fria, surge esta pioneira epopéia de ódio, amor, reencontros impossíveis, grandes reviravoltas e muita ação, como só a criatividade de Alan Moore e Dave Gibbons poderia conceber! WATCHMEN foi considerada pela revista TIME uma das cem melhores obras em língua inglesa de todos os tempos."
+              
+            }
+             function conteudoRemovido(){
+                primeiroBotao.style.display="inline-block"
+                segundoBotao.style.display="none"   
+                document.getElementById("texto").textContent=""
+            }
+        </script>
+        
+        <!-- carrinho de compra -->
+>>>>>>> e76a78f75ed363e83dfbc5adfb2fec74bafeb8c2
         <div class="container">
                 <div id="conteudo" >
                         <div class="dropdown" class="ls-custom-selec">
@@ -168,6 +191,31 @@
             <p>Elogiar "watchmen" é chover no molhado, a história é atemporal e impecável, os detalhes fazem cada leitura sem única e a arte é magnífica, perfeição é a única palavra que consigo encontrar para o roteiro e a arte dessa história em quadrinhos. E essa edição definitiva não só é de extrema qualidade quanto custo benefício, uma história desse nível num valor muito razoável... Obrigatório para qualquer colecionador ou leitor de HQs.</p>
             <br>
             <img src="images/user_img.png" class="userimg" alt="usuario">
+            <p>Não há tanto a se dizer sobre a qualidade e a importância de Watchmen para os quadrinhos. Resta então elogiar a edição, que foi recolorida e ficou ainda melhor neste encadernado.</p>
+        </div>
+    </div>
+    <div class="container video">
+        <ul class="nav nav-tabs">
+            <li class="nav-video">
+                <a class="nav-link" href="#" onclick="showVideo()">Vídeo</a>
+            </li>
+            <li class="nav-comentario">
+                <a class="nav-link" href="#" onclick="showComentarios()">Comentários</a>
+            </li>
+        </ul>
+        <div class="video-container" id="videoContainer">
+            <iframe id="videoFrame" width="560" height="315" src="https://www.youtube.com/embed/mv6cXnkc7wo?si=Rwio54du_608QSya" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="comentarios-container" id="comentariosContainer" style="display:none;">
+            <!-- Comentários -->
+            <br>
+            <img src="images/icons8-user-30.png" alt="">
+            <p>É um produto maravilhoso. É uma obra belíssima e leitura quase obrigatória pra quem gosta de HQ.</p>
+            <br>
+            <img src="images/icons8-user-30.png" alt="">
+            <p>Elogiar "watchmen" é chover no molhado, a história é atemporal e impecável, os detalhes fazem cada leitura sem única e a arte é magnífica, perfeição é a única palavra que consigo encontrar para o roteiro e a arte dessa história em quadrinhos. E essa edição definitiva não só é de extrema qualidade quanto custo benefício, uma história desse nível num valor muito razoável... Obrigatório para qualquer colecionador ou leitor de HQs.</p>
+            <br>
+            <img src="images/icons8-user-30.png" alt="">
             <p>Não há tanto a se dizer sobre a qualidade e a importância de Watchmen para os quadrinhos. Resta então elogiar a edição, que foi recolorida e ficou ainda melhor neste encadernado.</p>
         </div>
     </div>
