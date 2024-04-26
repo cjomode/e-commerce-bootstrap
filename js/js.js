@@ -1,13 +1,4 @@
 var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
 
 function showSlides(n) {
   var i;
@@ -23,4 +14,22 @@ function showSlides(n) {
   }
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
+}
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+function showVideo() {
+  document.getElementById('videoContainer').style.display = 'block';
+  document.getElementById('comentariosContainer').style.display = 'none';
+}
+
+function showComentarios() {
+  document.getElementById('comentariosContainer').style.display = 'block';
+  document.getElementById('videoContainer').style.display = 'none';
 }

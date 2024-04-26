@@ -1,9 +1,10 @@
-let valorFisico = 19.00;
-let valorDigital = 10.00;
+let valorFisico = 99.00;
+let valorDigital = 69.00;
 let valorFisicoAtualizado = valorFisico.toFixed(2);
 let valorDigitalAtualizado = valorDigital.toFixed(2);
 let valorAtual = valorFisico; // valor inicial
 let count = 1;
+let element = document.querySelector("#Adicionar")
 
 function changeText(text) {
     document.querySelector('.btn-secondary').textContent = text;
@@ -16,11 +17,15 @@ function numeroPadrao(){
 numeroPadrao();
 
 function changeValue(option) {
+    const valor = document.getElementById('versao')
+    const valueAcquired = valor.value
+
     const valorFisicoElement = document.getElementById('valorFisico');
-    if (option === 'Físico') {
+
+    if (valueAcquired == 'Fisico') {
         valorFisicoElement.textContent = `Valor R$ ${valorFisicoAtualizado}`;
         valorAtual = valorFisico;
-    } else if (option === 'Digital') {
+    } else if (valueAcquired == 'Digital') {
         valorFisicoElement.textContent = `Valor R$ ${valorDigitalAtualizado}`;
         valorAtual = valorDigital;
     }
@@ -56,3 +61,16 @@ function updateTotal() {
     const total = (valorAtual * count).toFixed(2);
     totalElement.textContent = `Total: R$ ${total}`;
 }
+function updateTotal() {
+    const totalElement = document.getElementById('total');
+    const total = (valorAtual * count).toFixed(2);
+    totalElement.textContent = `Total: R$ ${total}`};
+
+
+element.addEventListener("click", () => {
+    console.log(count)
+   /*  document.getElementById("cartcount").textContent = count; */
+    const cartCountElement = document.getElementById('cartcount');
+    cartCountElement.textContent = count + Number(cartCountElement.textContent);
+    window.alert(`Produto adicionado ao carrinho! Quantidade em estoque: ${count}.`);
+})
