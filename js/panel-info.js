@@ -1,0 +1,12 @@
+let primeiroBotao = document.getElementById("ver-mais-btn")        
+            let segundoBotao = document.getElementById("ver-menos-btn") 
+            function conteudoAdicionall(){
+                primeiroBotao.style.display="none"
+                segundoBotao.style.display="inline-block" 
+                document.getElementById("texto").textContent="Não apenas isso, o volume de 460 páginas também apresenta uma quantidade de extras jamais vista no Brasil, trazendo trechos do roteiro original, esboços de Gibbons, comentários sobre os personagens, textos dos criadores e mais. Uma edição primorosa que não pode faltar na estante de nenhum colecionador. Uma edição primorosa que não pode faltar na estante de nenhum colecionador.O ano é 1985. Os Estados Unidos são uma nação totalitária e fechada, isolada do resto do mundo. A presença de arsenais nucleares e dos chamados super-heróis mantém um certo equilíbrio entre as forças do planeta... até que o relógio do fim do mundo começa a marchar para a meia-noite e a raça humana para um abismo sem-fim. A sombria e inigualável trama tem início com ilusões paranóicas do supostamente insano herói Rorschach, um dos Watchmen que patrulhavam os EUA décadas atrás. Mas ele estaria realmente insano ou na verdade teria descoberto uma sórdida conspiração para assassinar super-heróis -- ou, pior ainda, milhões de civis inocentes? Fugindo da lei, Rorschach junta-se a ex-companheiros do passado em uma desesperada tentativa de salvar suas próprias vidas... e o que acabam descobrindo, além de abalar suas estruturas, poderá alterar o próprio destino do planeta Terra! Seguindo duas gerações de heróis mascarados, desde a Segunda Guerra até os tensos anos da Guerra Fria, surge esta pioneira epopéia de ódio, amor, reencontros impossíveis, grandes reviravoltas e muita ação, como só a criatividade de Alan Moore e Dave Gibbons poderia conceber! WATCHMEN foi considerada pela revista TIME uma das cem melhores obras em língua inglesa de todos os tempos."
+            }
+                function conteudoRemovido(){
+                primeiroBotao.style.display="inline-block"
+                segundoBotao.style.display="none"   
+                document.getElementById("texto").textContent=""
+            }
